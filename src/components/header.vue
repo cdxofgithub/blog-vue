@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <div class="container">
-            <div class="logo"><router-link to="/"><img src="/static/img/xinboke.png" alt="眼镜博客" width="150" height="50"></router-link></div>
+            <div class="logo"><router-link to="/"><img src="/static/img/logo.png" alt="眼镜博客" width="150" height="50"></router-link></div>
             <div class="nav_category" @click="toggleNav"><i class="iconfont icon-category"></i></div>
             <div class="nav_mobile" v-show="showNav" @click="toggleNav">
                 <ul>
@@ -17,7 +17,7 @@
             <div class="nav clearfix">
                 <ul>
                     <li><router-link to="/"  class="nav_a" active-class="nav_active" exact>主页</router-link></li>
-                    <li><router-link to="/dairy" class="nav_a" active-class="nav_active">博客</router-link></li>
+                    <li><router-link to="/dairy" class="nav_a" active-class="nav_active">日记</router-link></li>
                     <li><router-link to="/photo" class="nav_a" active-class="nav_active">照片墙</router-link></li>
                     <li v-if="!getAuth"><router-link to="/login" class="nav_a" active-class="nav_active">登录</router-link></li>
                     <li v-else>
